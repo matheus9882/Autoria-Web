@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            display: flex;
+            background-color: brown;
+            height: 300px;
+            width: 400px;
+            border: solid 1px;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+        .lado{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .esquerdo{
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+        .Barra{
+            background-color: yellow;
+            height: 30px;
+            width: 200px;
+        }
+        .direito{
+            align-items: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="lado direito">
+            <div class="Barra">
+
+            </div>
+            <div class="Barra">
+                
+            </div>
+            <div class="Barra">
+                
+            </div>
+        </div>
+        <div class="lado esquerdo">
+            <div class="Barra">
+                
+            </div>
+            <div class="Barra">
+                
+            </div>
+            <div class="Barra">
+                
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
