@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-areas: 
+            "area1 area1 area2"
+            "area3 area4 area2"
+            "area5 area5 area5";
+            gap: 10px;
+            border: 1px solid black;
+            padding: 10px;
+            background-color: dodgerblue;
+        }
+        .container > div{
+            background-color: #f1f1f1;
+            gap: 10px;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .um{
+            grid-area: area1;
+        }
+        .dois{
+            grid-area: area2;
+        }
+        .tres{
+            grid-area: area3;
+        }
+        .quatro{
+            grid-area: area4;
+        }
+        .cinco{
+            grid-area: area5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="um">item 1</div>
+        <div class="dois">item 2</div>
+        <div class="tres">item 3</div>
+        <div class="quatro">item 4</div>
+        <div class="cinco">item 5</div>
+    </div>
+</body>
+</html>
